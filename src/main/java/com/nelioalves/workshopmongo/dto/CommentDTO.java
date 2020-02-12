@@ -5,24 +5,24 @@ import java.util.Date;
 
 public class CommentDTO implements Serializable {
 
-    private String tex;
+    private String text;
     private Date date;
     private AuthorDTO author;
 
     public CommentDTO() {}
 
-    public CommentDTO(String tex, Date date, AuthorDTO author) {
-        this.tex = tex;
+    public CommentDTO(String text, Date date, AuthorDTO author) {
+        this.text = text;
         this.date = date;
         this.author = author;
     }
 
     public String getTex() {
-        return tex;
+        return text;
     }
 
     public void setTex(String tex) {
-        this.tex = tex;
+        this.text = tex;
     }
 
     public Date getDate() {
